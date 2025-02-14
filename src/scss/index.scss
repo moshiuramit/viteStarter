@@ -1,3 +1,21 @@
+// Bootstrap Grid
+@import "libs/bootstrap/scss/bootstrap-grid";
+
+// Bootstrap Modal
+@import "libs/bootstrap/scss/mixins/backdrop";
+@import "libs/bootstrap/scss/mixins/border-radius";
+@import "libs/bootstrap/scss/mixins/box-shadow";
+@import "libs/bootstrap/scss/mixins/transition";
+@import "libs/bootstrap/scss/transitions";
+@import "libs/bootstrap/scss/modal";
+
+// Bootstrap Utilities
+@import "libs/bootstrap/scss/utilities";
+
+// Bootstrap Accessibility
+@import "libs/bootstrap/scss/mixins/visually-hidden";
+@import "libs/bootstrap/scss/helpers/visually-hidden";
+
 @import './partials/base';
 :root {
     font-family: Roboto, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -25,24 +43,8 @@
   
   body {
     margin: 0;
-    display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
   }
-  
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-  }
-  
-  .card {
-    padding: 2em;
-  }
-  
-  .read-the-docs {
-    color: #888;
-  }
+
   
   button {
     border-radius: 8px;
@@ -54,13 +56,12 @@
     background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
-  }
-  button:hover {
-    border-color: #646cff;
-  }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+    &:hover {
+      border-color: #646cff;
+    }
+    &:focus, &:focus-visible {
+      outline: 4px auto -webkit-focus-ring-color;
+    }
   }
   
   @media (prefers-color-scheme: light) {
@@ -74,11 +75,4 @@
     button {
       background-color: #f9f9f9;
     }
-  }
-  
-
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
   }
